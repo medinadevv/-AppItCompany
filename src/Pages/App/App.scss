@@ -1,0 +1,84 @@
+#app {
+  padding-top: 30px;
+
+  .app {
+    &--title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      h1 {
+        color: #203B54;
+        font-family: "Roboto", Sans-serif;
+        font-size: 40px;
+        text-align: center;
+        font-weight: 600;
+      }
+
+      p {
+        line-height: 30px;
+        padding: 20px 0;
+        width: 900px;
+        text-align: center;
+        color: #203B54;
+        font-family: "Roboto", Sans-serif;
+        font-size: 1.2rem;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 992px) {
+  #app .app--title h1 {
+    font-size: 30px;
+  }
+  #app .app--title p {
+    width: 806px;
+    font-size: 1.1rem;
+  }
+
+}
+
+@media (max-width: 768px) {
+  #app .app--title h1 {
+    font-size: 25px;
+  }
+  #app .app--title p {
+    width: 688px;
+    font-size: 1rem;
+  }
+
+}
+
+@media (max-width: 500px) {
+  #app .app--title p {
+    width: 434px;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 425px){
+  #app .app--title h1 {
+    font-size: 25px;
+    width: 300px;
+  }
+}
+
+@media (max-width: 450px) {
+  #app .app--title p {
+    width: 323px;
+  }
+
+
+}
+
+@media (max-width: 320px) {
+  #app .app--title h1 {
+    font-size: 20px;
+  }
+  #app .app--title p {
+    width: 266px;
+  }
+}
+

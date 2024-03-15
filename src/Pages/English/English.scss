@@ -1,0 +1,215 @@
+#english {
+  background: #F3FCFF;
+  //display: none;
+  margin-top: 100px;
+
+  .english {
+    margin-top: 60px;
+
+    &--title {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 200px;
+
+      h1 {
+        color: #203B54;
+        font-family: "Roboto", Sans-serif;
+        font-size: 37px;
+        font-weight: 500;
+        width: 800px;
+        text-align: center;
+      }
+
+      h2 {
+        color: #203B54;
+        font-family: "Roboto", Sans-serif;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 1.9rem;
+        text-align: center;
+        width: 800px;
+      }
+    }
+
+    &--nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      &__90 {
+        margin-top: 50px;
+
+        h3 {
+          margin: 40px 0;
+          width: 80px;
+          height: 50px;
+          border-radius: 50px;
+          background: #142DFF;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: white;
+        }
+
+        p {
+          color: #203B54;
+          font-family: "Roboto", Sans-serif;
+          font-size: 1.2rem;
+          font-weight: 400;
+          line-height: 1.9rem;
+          width: 280px;
+        }
+      }
+
+      &__100 {
+        margin-top: 50px;
+
+        h3 {
+          margin: 40px 0;
+          width: 80px;
+          height: 50px;
+          border-radius: 50px;
+          background: #142DFF;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: white;
+        }
+
+        p {
+          color: #203B54;
+          font-family: "Roboto", Sans-serif;
+          font-size: 1.2rem;
+          font-weight: 400;
+          line-height: 1.9rem;
+          width: 630px;
+        }
+      }
+
+      &__1 {
+        margin-top: 70px;
+        width: 1px;
+        background: rgba(128, 128, 128, 0.71);
+        height: 310px;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  #english .english--title h1 {
+    font-size: 30px;
+  }
+  #english .english--title h2 {
+    font-size: 1.5rem;
+    width: 711px;
+  }
+  #english .english--title h1 {
+    font-size: 25px;
+    width: 728px;
+
+  }
+
+}
+
+@media (max-width: 768px) {
+  #english .english--nav {
+    flex-direction: column;
+  }
+  #english .english--nav__90 h3 {
+    margin-left: 88px;
+  }
+  #english .english--nav__1 {
+    display: none;
+  }
+  #english .english--nav__100 h3 {
+    margin-left: 255px;
+  }
+}
+
+@media (max-width: 500px) {
+  #english .english--title h1 {
+    font-size: 20px;
+    width: 444px;
+  }
+  #english .english--title h2 {
+    font-size: 1.1rem;
+    width: 439px;
+  }
+  #english .english--nav__90 p {
+    font-size: 1.1rem;
+  }
+  #english .english--nav__100 p {
+
+    width: 413px;
+  }
+  #english .english--nav__100 h3 {
+    margin-left: 165px;
+  }
+}
+
+@media (max-width: 450px) {
+  #english .english--nav__100 p {
+    font-size: 1rem;
+    width: 329px;
+    text-align: center;
+  }
+  #english .english--nav__100 h3 {
+    margin-left: 116px;
+  }
+}
+
+@media (max-width: 425px){
+  #english .english--title h2 {
+    font-size: 1.1rem;
+    width: 324px!important;
+  }
+}
+@media (max-width: 425px) {
+  #english .english--title h2 {
+    font-size: 1.1rem;
+    width: 387px;
+  }
+  #english .english--title h1 {
+    font-size: 20px;
+    width: 394px;
+  }
+
+}
+
+@media (max-width: 400px) {
+  #english .english--title h1 {
+    font-size: 20px;
+    width: 346px;
+  }
+  #english .english--title h2 {
+    font-size: 1.1rem;
+    width: 349px;
+  }
+
+}
+
+@media (max-width: 320px) {
+  #english .english--title h1 {
+    font-size: 18px;
+    width: 275px;
+  }
+  #english .english--title h2 {
+    font-size: 15px;
+    width: 258px;
+  }
+  #english .english--nav__90 p {
+    font-size: 1rem;
+  }
+  #english .english--nav__100 p {
+    font-size: 15px;
+    width: 278px;
+  }
+  #english .english--nav__100 h3 {
+    margin-left: 91px;
+  }
+
+}
+

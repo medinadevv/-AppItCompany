@@ -1,0 +1,97 @@
+#information {
+  background: #f1fafe;
+  margin-top: 60px;
+  height: 320px;
+
+  .information {
+
+    &--titles {
+      margin-top: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      h1 {
+        width: 450px;
+        color: #203B54;
+        font-family: "Inter", Sans-serif;
+        font-size: 37px;
+        font-weight: 500;
+      }
+
+      h2 {
+        width: 570px;
+        color: #203B54;
+        font-family: "Inter", Sans-serif;
+        font-size: 23px;
+        font-weight: 300;
+        line-height: 35px;
+      }
+
+    }
+
+  }
+}
+
+@media (max-width: 1024px) {
+  #information .information--titles h1 {
+    width: 331px;
+    font-size: 32px;
+  }
+  #information .information--titles h2 {
+    width: 484px;
+    font-size: 20px;
+  }
+
+}
+
+@media (max-width: 768px) {
+  #information .information--titles {
+    flex-direction: column;
+  }
+  #information .information--titles h1 {
+    width: 412px;
+    font-size: 30px;
+    text-align: center;
+  }
+  #information .information--titles h2 {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 71px;
+  }
+
+}
+
+@media (max-width: 450px) {
+  #information .information--titles h1 {
+    font-size: 25px;
+  }
+  #information .information--titles h2 {
+    font-size: 18px;
+    width: 356px;
+  }
+}
+
+@media (max-width: 400px) {
+  #information .information--titles h2 {
+    font-size: 18px;
+    width: 297px;
+  }
+  #information .information--titles h1 {
+    font-size: 20px;
+    width: 317px;
+  }
+}
+
+@media (max-width: 320px) {
+  #information .information--titles h2 {
+    font-size: 16px;
+    width: 271px;
+  }
+  #information .information--titles h1 {
+    font-size: 18px;
+    width: 282px;
+  }
+
+}
+

@@ -1,0 +1,144 @@
+
+#blog1 {
+  //display: none;
+  padding-top: 50px;
+
+  .blog {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    img {
+      width: 428px;
+    }
+
+    &--text {
+
+      h1 {
+        color: #203B54;
+        font-family: "Inter", Sans-serif;
+        font-size: 2rem;
+        font-weight: 500;
+      }
+
+      p {
+        padding: 20px 0;
+        width: 600px;
+        color: #203B54;
+        font-family: "Roboto", Sans-serif;
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 1.9rem;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 1024px) {
+  #blog1 .blog img {
+    width: 368px;
+  }
+  #blog1 .blog--text h1 {
+    font-size: 1.5rem;
+  }
+  #blog1 .blog--text p {
+    font-size: 1rem;
+  }
+
+}
+
+@media (max-width: 992px) {
+  #blog1 .blog img {
+    width: 338px;
+  }
+
+}
+
+@media (max-width: 768px) {
+  #blog1 .blog {
+    margin-top: 40px;
+    flex-direction: column;
+  }
+  #blog1 .blog img {
+    width: 388px;
+  }
+  #blog1 .blog--text h1 {
+    font-size: 1.5rem;
+    margin-top: 40px;
+    text-align: center;
+  }
+  #blog1 .blog--text p {
+    text-align: center;
+  }
+
+}
+
+@media (max-width: 500px) {
+  #blog1 .blog--text p {
+    width: 429px;
+  }
+}
+
+@media (max-width: 400px) {
+  #blog1 .blog img {
+    width: 345px;
+  }
+  #blog1 .blog--text h1 {
+    font-size: 1.2rem;
+  }
+  #blog1 .blog--text p {
+    width: 368px;
+  }
+}
+
+@media (max-width: 425px) {
+  #blog1 .blog--text h1 {
+    font-size: 1.5rem;
+    width: 401px;
+  }
+  #blog1 .blog--text p {
+    width: 386px;
+  }
+  #blog1 .blog img {
+    width: 330px;
+  }
+  #blog1 .blog--text p {
+    width: 372px;
+  }
+
+}
+
+@media (max-width: 376px) {
+  #blog1 .blog img {
+    width: 299px;
+  }
+  #blog1 .blog--text h1 {
+    font-size: 1rem;
+  }
+  #blog1 .blog--text p {
+    font-size: 15px;
+  }
+  #blog1 .blog--text p {
+    width: 305px;
+  }
+  #blog1 .blog--text p {
+    margin-left: 47px;
+  }
+}
+
+@media (max-width: 320px) {
+  #blog1 .blog--text h1 {
+    font-size: 1.2rem;
+    width: 313px;
+  }
+  #blog1 .blog img {
+    width: 255px;
+  }
+  #blog1 .blog--text p {
+    width: 266px;
+    margin-left: 20px;
+  }
+
+}
+

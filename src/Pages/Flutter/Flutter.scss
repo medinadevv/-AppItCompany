@@ -1,0 +1,167 @@
+#flutter {
+  padding-top: 50px;
+
+  .flutter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 300px;
+
+    h1 {
+      color: #203B54;
+      font-family: "Roboto", Sans-serif;
+      font-size: 2.8rem;
+      font-weight: 600;
+    }
+
+    h2 {
+      color: #203B54;
+      font-family: "Inter", Sans-serif;
+      font-size: 1.8rem;
+      font-weight: 500;
+
+    }
+
+    p {
+      width: 550px;
+      text-align: center;
+      color: #203B54;
+      font-family: "Inter", Sans-serif;
+      font-size: 18px;
+      line-height: 30px;
+
+      span {
+        font-weight: 800;
+      }
+    }
+
+    h3 {
+      color: #203B54;
+      font-family: "Inter", Sans-serif;
+      font-size: 38px;
+      font-weight: 700;
+      padding-top: 30px;
+    }
+  }
+}
+@media (max-width: 1024px){
+  #flutter .flutter h1 {
+    font-size: 2.4rem;
+    text-align: center;
+  }
+}
+@media (max-width: 992px) {
+  #flutter .flutter h1 {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #flutter .flutter h1 {
+    font-size: 2rem;
+  }
+  #flutter .flutter h2 {
+    font-size: 1.5rem;
+  }
+  #flutter .flutter p {
+    width: 494px;
+    font-size: 15px;
+  }
+  #flutter .flutter h3 {
+    font-size: 30px;
+  }
+
+}
+
+@media (max-width: 500px) {
+  #flutter .flutter h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    width: 398px;
+  }
+  #flutter .flutter h2 {
+    font-size: 1.2rem;
+  }
+  #flutter .flutter p {
+    width: 422px;
+    font-size: 15px;
+  }
+  #english .english--title h2 {
+    font-size: 1.1rem;
+    width: 376px;
+  }
+}
+@media (max-width: 425px){
+  #flutter .flutter h2 {
+    font-size: 1.2rem;
+    width: 300px;
+    text-align: center;
+  }
+  #flutter .flutter p {
+    width: 338px;
+    font-size: 15px;
+  }
+}
+@media (max-width: 400px) {
+  #flutter .flutter p {
+    width: 350px;
+    font-size: 15px;
+  }
+  #blog1 .blog--text h1 {
+    font-size: 1.5rem;
+    width: 368px;
+  }
+  #flutter .flutter h2 {
+    font-size: 1.1rem;
+  }
+  #flutter .flutter h3 {
+    font-size: 25px;
+  }
+  #english .english--title h1 {
+    font-size: 20px;
+    width: 358px;
+  }
+
+}
+
+@media (max-width: 425px) {
+  #english .english--title h1 {
+    font-size: 20px;
+    width: 358px;
+  }
+
+}
+
+@media (max-width: 376px) {
+  #flutter .flutter h1 {
+    font-size: 1.2rem;
+    text-align: center;
+    width: 280px;
+  }
+  #flutter .flutter h2 {
+    font-size: 1rem;
+  }
+  #flutter .flutter p {
+    width: 281px;
+    font-size: 13px;
+  }
+  #flutter .flutter h3 {
+    font-size: 23px;
+  }
+
+}
+
+@media (max-width: 320px) {
+  #flutter .flutter h1 {
+    font-size: 1rem;
+    text-align: center;
+    width: 264px;
+  }
+  #flutter .flutter h2 {
+    font-size: 15px;
+    width: 200px;
+    text-align: center;
+  }
+
+}
