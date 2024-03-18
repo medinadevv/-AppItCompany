@@ -27,7 +27,7 @@
         font-size: 30px;
         letter-spacing: -2px;
         font-weight: 700;
-        color: #203B54;
+        color: #203b54;
         font-family: "Roboto", Sans-serif;
       }
     }
@@ -42,7 +42,6 @@
         font-size: 15px;
         color: #203b54;
         cursor: pointer;
-
       }
 
       .contact2 {
@@ -60,10 +59,8 @@
     }
 
     &--logo {
-
       &--icon {
         h1 {
-
         }
       }
 
@@ -112,7 +109,7 @@
         opacity: 0;
         border: 2px solid black;
         border-radius: 10px 0 0 10px;
-        .contact1{
+        .contact1 {
           color: black;
         }
       }
@@ -136,7 +133,6 @@
       }
 
       .hamburger-lines {
-
         display: block;
         height: 26px;
         width: 32px;
@@ -202,12 +198,14 @@
 }
 
 @media (max-width: 1024px) {
-  #header .header {
-    justify-content: space-around;
-  }
-  #header .header--title h1 {
-    font-size: 25px;
-    letter-spacing: -1px;
+  #header {
+    .header {
+      justify-content: space-around;
+      &--title h1 {
+        font-size: 25px;
+        letter-spacing: -1px;
+      }
+    }
   }
 }
 
@@ -225,15 +223,13 @@
     transform: translateX(-43%) !important;
     opacity: 1;
   }
-  #header .header .burger .menu-items{
+  #header .header .burger .menu-items {
     padding-top: 20px;
     align-items: end !important;
-    .nav{
+    .nav {
       display: flex;
       flex-direction: column;
       gap: 10px;
     }
-
   }
 }
-
