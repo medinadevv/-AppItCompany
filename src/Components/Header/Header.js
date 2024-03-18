@@ -138,15 +138,15 @@ const Header = ({ dark, setDark, setValue, value }) => {
                 className="hamburger-lines"
               >
                 <span
-                  style={{ color: dark ? "#fff" : "" }}
+                  style={{ background: dark ? "#fff" : "" }}
                   className="line line1"
                 ></span>
                 <span
-                  style={{ color: dark ? "#fff" : "" }}
+                  style={{ background: dark ? "#fff" : "" }}
                   className="line line2"
                 ></span>
                 <span
-                  style={{ color: dark ? "#fff" : "" }}
+                  style={{ background: dark ? "#fff" : "" }}
                   className="line line3"
                 ></span>
               </div>

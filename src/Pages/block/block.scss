@@ -1,0 +1,64 @@
+.users {
+  display: grid;
+  grid-template-columns: repeat(3, 250px);
+  grid-auto-rows: 140px;
+  justify-content: space-around;
+  gap: 30px;
+  row-gap: 20px;
+  padding-left: 370px;
+  &__card {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background: gray;
+    padding: 10px;
+    width: 100%;
+    color: #fff;
+    span {
+      color: rgb(78, 190, 246);
+    }
+  }
+  &__loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300%;
+    height: 70vh;
+    svg {
+      width: 3.25em;
+      transform-origin: center;
+      animation: rotate4 2s linear infinite;
+      circle {
+        fill: none;
+        stroke: hsl(214, 97%, 59%);
+        stroke-width: 2;
+        stroke-dasharray: 1, 200;
+        stroke-dashoffset: 0;
+        stroke-linecap: round;
+        animation: dash4 1.5s ease-in-out infinite;
+      }
+    }
+  }
+}
+
+@keyframes rotate4 {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes dash4 {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+  }
+
+  50% {
+    stroke-dasharray: 90, 200;
+    stroke-dashoffset: -35px;
+  }
+
+  100% {
+    stroke-dashoffset: -125px;
+  }
+}

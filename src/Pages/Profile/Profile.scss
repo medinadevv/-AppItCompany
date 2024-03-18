@@ -1,21 +1,25 @@
 #profile {
   .profile {
     display: flex;
-    align-items: start;
     gap: 50px;
+    min-width: 100%;
+    justify-content: space-between;
 
     &--blocks {
       display: flex;
       flex-direction: column;
       gap: 20px;
-      height: 70vh;
+      height: 78vh;
       width: 50vh;
       background: white;
       border-right: 2px solid black;
       padding-top: 50px;
+      position: fixed;
+      top: 90px;
 
       &__block {
         padding: 5px 0 5px 20px;
+
         .active {
           position: relative;
           &:before {
