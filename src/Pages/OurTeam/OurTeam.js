@@ -1,101 +1,57 @@
-import React from 'react';
-import './OurTeam.scss'
-import images1 from '../../Img/Turat.jpg'
-import images2 from '../../Img/eldiar3.jpg'
-import images3 from '../../Img/mustafa-nabiev.jpg'
-import images4 from '../../Img/guljigit.jpeg'
-import images5 from '../../Img/syimyk.jpg'
-import images6 from '../../Img/www.jpeg'
+import React, { useEffect, useState } from "react";
+import "./OurTeam.scss";
+import images1 from "../../Img/Turat.jpg";
 import Contact from "../Contact/Contact";
+import axios from "axios";
 
 // Бул 10-section бул жакта App It академиясында иштеген адамдар тууралуу маалымат  жазылган
 
-const OurTeam = ({dark,value}) => {
-    let newData = JSON.parse(localStorage.getItem('data')) || []
-    console.log(newData)
+const OurTeam = ({ dark, value }) => {
+  const [person, setPerson] = useState([]);
 
-    return (
-        <>
-            <div id="team">
-                <div className="container">
-                    <h1 style={{color: dark ? '#fff' : ''}}>Биздин команда</h1>
-                    <div className="team">
-                        <div className="team--all">
-                            <div className="team--all__img">
-                                <img src={images1} alt=""/>
-                            </div>
-                            <div className="team--all__text">
-                                <h2 style={{color: dark ? '#fff' : ''}}>Турат Алыбаев</h2>
-                                <h3 style={{color: dark ? '#fff' : ''}}>CEO, Director</h3>
-                            </div>
-                        </div>
-                        <div className="team--all">
-                            <div className="team--all__img">
-                                <img src={images2} alt=""/>
-                            </div>
-                            <div className="team--all__text">
-                                <h2 style={{color: dark ? '#fff' : ''}}>Элдияр Алмазбек</h2>
-                                <h3 style={{color: dark ? '#fff' : ''}}>Flutter Developer</h3>
-                            </div>
-                        </div>
-                        <div className="team--all">
-                            <div className="team--all__img">
-                                <img src={images3} alt=""/>
-                            </div>
-                            <div className="team--all__text">
-                                <h2 style={{color: dark ? '#fff' : ''}}>Мустафа Набиев</h2>
-                                <h3 style={{color: dark ? '#fff' : ''}}>Flutter Developer</h3>
-                            </div>
-                        </div>
-                        <div className="team--all">
-                            <div className="team--all__img">
-                                <img src={images4} alt=""/>
-                            </div>
-                            <div className="team--all__text">
-                                <h2 style={{color: dark ? '#fff' : ''}}>Гүлжигит Талантбеков</h2>
-                                <h3 style={{color: dark ? '#fff' : ''}}>Mentor</h3>
-                            </div>
-                        </div>
-                        <div className="team--all">
-                            <div className="team--all__img">
-                                <img src={images5} alt=""/>
-                            </div>
-                            <div className="team--all__text">
-                                <h2 style={{color: dark ? '#fff' : ''}}>Сыймык Абдыбеков</h2>
-                                <h3 style={{color: dark ? '#fff' : ''}}>Mentor</h3>
-                            </div>
-                        </div>
-                        <div className="team--all">
-                            <div className="team--all__img">
-                                <img src={images6} alt=""/>
-                            </div>
-                            <div className="team--all__text">
-                                <h2 style={{color: dark ? '#fff' : ''}}>Нурдөөлөт Рысбаев</h2>
-                                <h3 style={{color: dark ? '#fff' : ''}}>Backend Developer</h3>
-                            </div>
-                        </div>
-                        {
-                            newData.map(el => (
-                                <div className="team--data">
-                                    <div className="team--data__datas">
-                                        <div className="team--data__datas--img1">
-                                            <img src={el.Img} alt="" />
-                                        </div>
-                                        <div className="team--data__datas--texts">
-                                            <h1 style={{color: dark ? '#fff' : ''}} >{el.Name}</h1>
-                                            <h2 style={{color: dark ? '#fff' : ''}}>{el.SirName}</h2>
-                                        </div>
-                                    </div>
+  async function getEmplover() {
+    let { data } = await axios("http://3.91.193.191/api/auth");
+    setPerson(data);
+  }
 
-                                </div>
-                            ))
-                        }
-                    </div>
+  async function deleteEmplover(id) {
+    await axios.delete(`http://3.91.193.191/api/auth/${id}`);
+  }
+
+  useEffect(() => {
+    getEmplover();
+  }, []);
+
+  return (
+    <>
+      <div id="team">
+        <div className="container">
+          <h1 style={{ color: dark ? "#fff" : "" }}>Биздин команда</h1>
+          <div className="team">
+            {person.map((el, idx) => (
+              <div key={idx} className="team--all">
+                <div className="team--all__img">
+                  <img src={el.image} alt="" />
                 </div>
-            </div>
-            <Contact value={value} dark={dark}/>
-        </>
-    );
+                <div className="team--all__text">
+                  <h2 style={{ color: dark ? "#fff" : "" }}>{el.fullName}</h2>
+                  <h3 style={{ color: dark ? "#fff" : "" }}>{el.occupation}</h3>
+                  <button
+                    onClick={() => {
+                      deleteEmplover(el.id);
+                    }}
+                  >
+                    delete
+                  </button>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+      <Contact value={value} dark={dark} />
+    </>
+  );
 };
 
 export default OurTeam;

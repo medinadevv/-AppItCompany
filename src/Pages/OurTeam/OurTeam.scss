@@ -2,7 +2,7 @@
   margin-top: 50px;
   h1 {
     text-align: center;
-    color: #203B54;
+    color: #203b54;
     font-family: "Roboto", Sans-serif;
     font-size: 2.8rem;
     font-weight: 600;
@@ -30,18 +30,17 @@
         height: 350px;
         background: #d1effa;
         border-radius: 50px;
-
         img {
           border-radius: 50px;
           width: 332px;
           height: 332px;
-
+          object-fit: cover;
         }
       }
 
       &__text {
         h2 {
-          color: #203B54;
+          color: #203b54;
           font-family: "Roboto", Sans-serif;
           font-size: 24px;
           font-weight: 500;
@@ -49,7 +48,7 @@
         }
 
         h3 {
-          color: #203B54;
+          color: #203b54;
           font-family: "Inter", Sans-serif;
           font-size: 14px;
           font-weight: 300;
@@ -86,7 +85,7 @@
 
         &--texts {
           h1 {
-            color: #203B54;
+            color: #203b54;
             font-family: "Roboto", Sans-serif;
             font-size: 24px;
             font-weight: 500;
@@ -94,14 +93,13 @@
           }
 
           h2 {
-            color: #203B54;
+            color: #203b54;
             font-family: "Inter", Sans-serif;
             font-size: 14px;
             font-weight: 300;
             text-align: center;
           }
         }
-
       }
     }
   }
@@ -111,27 +109,23 @@
   #team .team {
     justify-content: space-evenly;
   }
-
 }
 
 @media (max-width: 768px) {
   #team h1 {
     padding-top: 144px;
     font-size: 2.4rem;
-
   }
   #team h1 {
     padding-top: 200px;
     font-size: 2rem;
   }
-
 }
 
 @media (max-width: 400px) {
   #team .team--all__img {
     width: 321px;
     height: 321px;
-
   }
   #team h1 {
     padding-top: 200px;
@@ -141,7 +135,6 @@
     width: 297px;
     height: 297px;
   }
-
 }
 
 @media (max-width: 320px) {
@@ -163,7 +156,4 @@
 }
 
 @media (max-width: 450px) {
-
 }
-
-

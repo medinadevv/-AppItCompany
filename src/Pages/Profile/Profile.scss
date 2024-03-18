@@ -11,8 +11,7 @@
       height: 70vh;
       width: 50vh;
       background: white;
-      border: 2px solid black;
-      border-radius: 20px;
+      border-right: 2px solid black;
       padding-top: 50px;
 
       &__block {
@@ -20,7 +19,7 @@
         .active {
           position: relative;
           &:before {
-            content: '';
+            content: "";
             position: absolute;
             top: 62%;
             left: 107%;
@@ -29,7 +28,6 @@
             height: 10px;
             background: black;
             border-radius: 50%;
-
           }
         }
 
@@ -48,7 +46,7 @@
           position: relative;
 
           &:before {
-            content: '';
+            content: "";
             position: absolute;
             top: 62%;
             left: 110%;
@@ -57,16 +55,15 @@
             height: 10px;
             background: black;
             border-radius: 50%;
-
           }
         }
-
 
         a {
           text-decoration: none;
           font-size: 29px;
           font-weight: 400;
           color: black;
+          cursor: pointer;
         }
       }
     }

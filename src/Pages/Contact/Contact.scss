@@ -17,7 +17,7 @@
         border-radius: 50px;
         height: 40px;
         background: #d1effa;
-        color: #203B54;
+        color: #203b54;
         font-family: "Roboto", Sans-serif;
         font-size: 1.1rem;
         font-weight: 600;
@@ -25,7 +25,7 @@
 
       h1 {
         padding-top: 20px;
-        color: #203B54;
+        color: #203b54;
         font-family: "Roboto", Sans-serif;
         font-size: 2rem;
         font-weight: 500;
@@ -49,7 +49,7 @@
           display: flex;
           align-items: center;
           justify-content: center;
-          background: #0088CC;
+          background: #0088cc;
           width: 350px;
           height: 70px;
           border-radius: 10px;
@@ -90,7 +90,7 @@
           display: flex;
           align-items: center;
           justify-content: center;
-          background: #C32AA3;
+          background: #c32aa3;
           width: 350px;
           height: 70px;
           border-radius: 10px;
@@ -111,7 +111,7 @@
           display: flex;
           align-items: center;
           justify-content: center;
-          background: #FF0000;
+          background: #ff0000;
           width: 350px;
           height: 70px;
           border-radius: 10px;
@@ -135,6 +135,7 @@
       font-weight: 300;
       color: rgba(32, 59, 84, 0.59);
       text-align: center;
+      cursor: pointer;
     }
   }
 }
@@ -195,19 +196,19 @@
   }
 }
 
-@media (max-width: 425px){
+@media (max-width: 425px) {
   #contact .contact--title h1 {
     font-size: 1.1rem;
     width: 300px;
     text-align: center;
   }
 }
-@media (max-width: 400px){
+@media (max-width: 400px) {
   #contact .contact--title h1 {
     font-size: 1rem;
   }
 }
-@media (max-width: 376px){
+@media (max-width: 376px) {
   #contact .contact--title h1 {
     width: 193px;
     text-align: center;
@@ -223,12 +224,10 @@
   #contact .contact--link__btn--btn3 {
     width: 260px;
     height: 63px;
-
   }
   #contact .contact--link__btn--btn4 {
     width: 260px;
     height: 63px;
-
   }
   #contact .contact--link__btn--btn1 a {
     font-size: 15px;
@@ -243,4 +242,3 @@
     font-size: 15px;
   }
 }
-
